@@ -1,0 +1,377 @@
+.main-container{
+    .sme--list-image-container{
+        position: relative;
+        img{
+            width: 100%;
+        }
+        margin-bottom: 20px;
+        .search-container{
+            text-align: center;
+            width: 100%;
+            position: absolute;
+            bottom:20px;
+            .search-cont-text{
+                width: calc(100% - 600px);
+                position: relative;
+                margin: 0px auto;
+            }
+            input{
+                height: 60px;
+                border-radius: 10px;
+                background: #ffffff;
+                border: 0;
+                width: 100%;
+                padding-left: 20px;
+            }
+            .search-icon{
+                background: url('images/search.svg') $light-green no-repeat center;
+                padding: 12px;
+                border-radius: 8px;
+                width: 46px;
+                height: 46px;
+                display: inline-block;
+                position: absolute;
+                right: 7px;
+                top: 7px;
+            }
+        }
+    }
+}
+
+/* course filter section starts here*/
+
+.sme--list-filter-section.course-filter-section-top{
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    button{
+        background: $white;
+        border-radius: 10px;
+        padding: 20px 10px;
+        width: 125px;
+        margin-left: 14px;
+        margin-bottom: 48px;
+        text-align: left;
+        padding-left: 25px;
+        &.active{
+            background-color: $fliter-active;
+            color: $white;
+        }
+    }
+}
+.sme--list-course-container.course-filter-section{
+    margin-bottom: 40px;
+    &-check{
+        background: $white;
+        border-radius: 20px;
+        padding: 20px 0;
+        margin: 0px auto;
+    }
+    .check-sme-list{
+        display: flex;
+        justify-content: space-between;
+        @include font($body-color,30px,400,38px);
+        margin: 0px auto;
+        p{
+            @include font(false,20px,400,20px);
+            &.sort-by{
+                display: flex;
+                align-items: center;
+                span{
+                    width: 100px;
+                }
+            }
+        }
+    }
+    .sme--list-content{
+        .sme--list-user-details{
+            // border: 1px solid red;
+            img.sme--list-image{
+                width: 100%;
+            }
+        }
+        .sme--list-user-details-page{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            .sme--list--top{
+                p{
+                    @include font($black,16px,400,20px);
+                    margin-bottom: 2px;
+                    &:first-child{
+                        @include font($black,20px,400,20px);
+                    }
+                    span{
+                        margin-left: 20px;
+                        &.sme--age{
+                            color: $dark-red;
+                        }
+                    }
+                }
+            }
+            .sme--list--bottom{
+                display: flex;
+                flex-direction: column;
+                img{
+                    margin-bottom: 15px;
+                }
+            }
+        }
+        margin: 0 auto;
+    }
+    .pagination-component{
+        margin-top: 40px;
+        button{
+            background: rgba(141, 182, 0, 0.24);
+            border-radius: 6px;
+            width: 44px;
+            height: 44px;
+        }
+        .previous{
+            margin-right: 20px;
+        }
+        .next{
+            margin-left: 20px;
+            background: $light-green;
+            color: $white;
+        }
+        .page-count{
+            margin: 0 30px;
+        }
+    }
+}
+
+.ongoing-container.ongoing-filter-container{
+    margin: 10px auto 0;
+    .review-cont-box {
+        padding: 12px 0px;
+        background: $white;
+        border-radius: 7px;
+        .review-cont-details{
+            margin-bottom: 20px;
+            .review-cont-details-back{
+                border-radius: 10px;
+                background: $white;
+                border: 1px solid $light-green;
+                padding: 0;
+                height: 100%;
+                position: relative;
+                overflow: hidden;
+            }
+            .review-cont-details-border{
+                display: flex;
+                padding: 14px 14px 7px;
+                .review-right-content{
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    &-top{
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                        align-content: flex-start;
+                        font-size: 12px;
+                        .inter-mediate{
+                            background: #D9E0FC;
+                            border-radius: 10px;
+                            padding: 5px 19px;
+                            height: 21px;
+                        }
+                        .class-review-rating{
+                            display: flex;
+                            align-items: center;
+                            .star-rating{
+                                background: url('images/star_select.png') no-repeat;
+                                background-size: 16px;
+                                width: 16px;
+                                height: 16px;
+                                display: inline-block;
+                            }
+                            .rating-number{
+                                @include font($black,12px,false,20px);
+                                &.rating-left{
+                                    margin-right: 5px;
+                                }
+                                &.rating-right{
+                                    margin-left: 5px;
+                                }
+                            }
+                        }
+                        .class-circle{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            span.circle-green{
+                                width: 25px;
+                                height: 25px;
+                                border-radius: 25px;
+                                display: inline-block;
+                                background: #168F3F;
+                                margin-right: 10px;
+                            }
+                            &-half{
+                                span.circle-green{
+                                    background: linear-gradient(90deg, #168F3F 50%, #D9D9D9 50%);
+                                }
+                            }
+                        }
+                    }
+                    &-bottom{
+                        @include font($black,24px,false,50px);
+                        p{ 
+                            &.content-name-text-header{
+                                line-height: 30px;
+                            }
+                            &.content-name-text{
+                                @include font(false,18px,false,20px);
+                                margin-bottom: 6px;
+                            }
+                            &.content-name-age{
+                                @include font(false,14px,false,20px);
+                            }
+                        }
+                    }
+                }
+                .review-circle{
+                    margin-right: 15px;
+                }
+            }
+            .review-learner-bottom-new{
+                background: rgba(40, 149, 250, 0.6);
+                padding: 23px;
+                color: $black;
+                position: relative;
+                z-index: 1;
+                margin-top: -26px;
+                &.start-course{
+                    background-color: rgba(9, 180, 37, 0.6);
+                }
+            }
+        }
+    }
+    &.ongoing-recommended-container{
+        .review-learner-middle{
+            padding: 4px 14px 7px;
+            display: flex;
+            align-items: center;
+            .review-text-circle{
+                width: 24px;
+                height: 24px;
+                border-radius: 24px;
+                display: inline-block;
+                overflow: hidden;
+                padding: 5px;
+                text-align: center;
+                &.first{
+                    background: $light-yellow;
+                }
+                &.last{
+                    background: $light-red;
+                    margin-left: -5px;
+                }
+            }
+            .review-next-text{
+                @include font($body-text,16px,400,false);     
+                margin-left: 10px;                       
+            }
+        }
+        .review-cont-details-back{
+            .review-right-content-bottom{
+                display: flex;
+                justify-content: space-between;
+                .review-social-btn{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    img{
+                        margin-bottom: 5px;
+                    }
+                }                       
+            }
+        }
+        .review-cont-details{
+            .review-learner-bottom{
+                background: rgb(217 217 217 / 60%);
+                border-radius: 0px 0px 10px 10px;
+                padding: 5px 15px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                // position: absolute;
+                // bottom: 0;
+                // left: 0;
+                // right: 0;
+                span{
+                    color: $red;
+                }
+                button{
+                    background-color: $light-green;
+                    padding: 5px 17px;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+/* course filter section ends here*/
+
+@media only screen and (max-width: 557px){
+    .main-container .sme--list-course-container{
+        &.course-filter-section{
+            div.sme--list-filter-section-left {
+                display: inline;
+            }
+        }
+    } 
+}
+@media only screen and (max-width: 1024px) {
+    .main-container {
+        .landing-search-image-container .search-container div.search-cont-text {
+            width: calc(100% - 60px);
+        }
+        .course-container .course-btn-content {
+            .course-list .course-details{
+                flex: 0 0 auto;
+                width: 50%;
+            }
+        }
+        .sme--list-image-container{
+            .search-container{
+                div.search-cont-text{
+                    width: calc(100% - 200px);
+                    input{
+                        height: 40px;
+                        &+span{
+                            width: 41px;
+                            height: 32px;
+                            right: 7px;
+                            top: 5px;
+                        }
+                    }
+                }
+            }
+        }
+        div.sme--list-filter-section {
+            button{
+                width: 102px;
+                padding-left: 13px;
+            }
+        }
+    }
+    .main-container{
+        .sme--list-filter-section{
+            &.course-filter-section-top{
+                .sme--list-filter-section-left {
+                    button{
+                        width: auto;
+                        padding: 10px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        } 
+    }
+}

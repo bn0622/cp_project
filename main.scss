@@ -2,119 +2,20 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-button{
-    border: 0;
-    &:focus{
-        border: 0;
-    }
-}
-input[type='text'],input[type='password'],input[type='number']{
-    border: 0;
-    outline: 0;
-    &:focus{
-        border: 0;
-        outline: 0;
-    }
-}
-
+@import "reset.scss";
+@import "variable.scss";
+@import "stepper.scss";
+@import "myCourse.scss";
+@import "courseFilter.scss";
+@import "courseVideos.scss";
 
 @font-face {
     font-family: AbelFont;
     src: url(font/Abel-Regular.ttf);
-  }
-
-$body-bg: #F7F5FA;
-$body-color : #0A033C;
-$white : #ffffff;
-$black : #000000;
-$light-green: #8DB600;
-$body-text: #5D5A6F;
-$btn-active: #FF6652;
-$light-black: #383932;
-$text-border: #DEDDE4;
-$border-grey: #777777;
-$text-grey: #A4A4A4;
-$help-bg: #383932;
-$danger-color: #ff3b30;
-$info-color: #2CA8FF;
-$mercury: #e5e5e5;
-$success-color: #05AE0E;
-$light-yellow: #FFB54A;
-$light-red: #CC6144;
-$dark-red: #F81616;
-$fliter-active: #E86E2D;
-$red: #FF0000;
+}
 
 
-@mixin font($color,$size,$weight,$height) {
-    color: $color;
-    font-size: $size;
-    font-weight: $weight;
-    line-height: $height;
-}
-.main-header{
-    @include font($body-color,45px,400,55px);
-}
-.main-para{
-    @include font($body-text,16px,400,30px);
-}
-.mb-20{
-    margin-bottom: 20px;
-}
-.light-green-btn{
-    background-color: $light-green;
-    color: $white;
-}
-input[type='text'],input[type='password'],input[type='number']{
-    border: 1px solid $text-border;
-    &:focus{
-        border: 1px solid $text-border;
-    }
-}
+
 
 
 body{
@@ -504,6 +405,19 @@ body{
             }
         }
     }
+    .main-container{
+        .sme--list-filter-section{
+            &.course-filter-section-top{
+                .sme--list-filter-section-left {
+                    button{
+                        width: auto;
+                        padding: 10px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        } 
+    }
     .my-course-details{
         width: 100%;
         max-width: 100%;
@@ -780,6 +694,9 @@ body{
     .sme-accordion{
         width: calc(100% - 140px);
         margin: 0 auto 20px;
+        .course-details-desc{
+            @include font($body-color,30px,400,38px);
+        }
         .basic-update-label{
             padding: 26px 55px 0 55px;
             max-width: 800px;
@@ -859,187 +776,7 @@ body{
     }
 }
 
-.md-stepper-horizontal {
-	display:table;
-	width:100%;
-	margin:0 auto;
-}
-.md-stepper-horizontal .md-step {
-	display:table-cell;
-	position:relative;
-	padding:24px;
-}
-.md-stepper-horizontal .md-step:active {
-	border-radius: 15% / 75%;
-}
-.md-stepper-horizontal .md-step:first-child:active {
-	border-top-left-radius: 0;
-	border-bottom-left-radius: 0;
-}
-.md-stepper-horizontal .md-step:last-child:active {
-	border-top-right-radius: 0;
-	border-bottom-right-radius: 0;
-}
-.md-stepper-horizontal .md-step:hover .md-step-circle {
-	background-color:#757575;
-}
-.md-stepper-horizontal .md-step:first-child .md-step-bar-left,
-.md-stepper-horizontal .md-step:last-child .md-step-bar-right {
-	display:none;
-}
-.md-stepper-horizontal .md-step .md-step-circle {
-	width:30px;
-	height:30px;
-	margin:0 auto;
-	background-color:#999999;
-	border-radius: 50%;
-	text-align: center;
-	line-height:30px;
-	font-size: 16px;
-	font-weight: 600;
-	color:#FFFFFF;
-}
-.md-stepper-horizontal .md-step.green.active .md-step-circle {
-	background: url('images/done.png')no-repeat 4px 2px;
-}
-.md-stepper-horizontal .md-step.orange.active .md-step-circle {
-	background: url('images/editable.png')no-repeat 4px 2px;
-}
-.md-stepper-horizontal .md-step.active .md-step-circle {
-	background: url('images/next.png')no-repeat 4px 2px;
-}
-.md-stepper-horizontal .md-step.done .md-step-circle:before {
-	// font-family:'FontAwesome';
-	// font-weight:100;
-	content: "";
-}
-.md-stepper-horizontal .md-step.done .md-step-circle *,
-.md-stepper-horizontal .md-step.editable .md-step-circle * {
-	display:none;
-}
-.md-stepper-horizontal .md-step.editable .md-step-circle {
-	-moz-transform: scaleX(-1);
-	-o-transform: scaleX(-1);
-	-webkit-transform: scaleX(-1);
-	transform: scaleX(-1);
-}
-.md-stepper-horizontal .md-step.editable .md-step-circle:before {
-	// font-family:'FontAwesome';
-	// font-weight:100;
-	content: " ";
-}
-.md-stepper-horizontal .md-step .md-step-title {
-	margin-top:10px;
-	margin-bottom:40px;
-	font-size:16px;
-	font-weight: 400;
-}
-.md-stepper-horizontal .md-step .md-step-title,
-.md-stepper-horizontal .md-step .md-step-optional {
-	text-align: center;
-	color:rgba(0,0,0,.26);
-}
-.md-stepper-horizontal .md-step.active .md-step-title {
-	font-weight: 400;
-	color:rgba(0,0,0,.87);
-}
-.md-stepper-horizontal .md-step.active.done .md-step-title,
-.md-stepper-horizontal .md-step.active.editable .md-step-title {
-	font-weight:600;
-}
-.md-stepper-horizontal .md-step .md-step-optional {
-	font-size:12px;
-}
-.md-stepper-horizontal .md-step.active .md-step-optional {
-	color:rgba(0,0,0,.54);
-}
-.md-stepper-horizontal .md-step .md-step-bar-left,
-.md-stepper-horizontal .md-step .md-step-bar-right {
-	position:absolute;
-	top:36px;
-	height:1px;
-	border-top:1px solid #DDDDDD;
-}
-.md-stepper-horizontal .md-step .md-step-bar-right {
-	right:0;
-	left:50%;
-	margin-left:20px;
-}
-.md-stepper-horizontal .md-step .md-step-bar-left {
-	left:0;
-	right:50%;
-	margin-right:20px;
-}
 
-.my-course-container{
-    .my-course-content{
-        margin: 0px auto;
-        .my-course-details{
-            // border: 1px solid red;
-            .my-course-detils-page{
-                background: $white;
-                border-radius: 15px;
-                padding: 23px 14px;
-                margin: 0 0 30px;
-                // border: 1px solid green;
-            }
-            .my-course-details-left{
-                width: 50%;
-                h3{
-                    @include font($body-color,25px,400,32px);
-                }
-                p{
-                    @include font($body-color,18px,400,23px);
-                }
-            }
-            .my-course-details-right{
-                width: 50%;
-                text-align: right;
-                img{
-                    max-width: 140px;
-                }
-            }
-            &-content{
-                display: flex;
-                justify-content: space-between;
-            }
-            .my-course-middle{
-                display: flex;
-                align-items: center;
-                margin-top: 20px;
-                .my-course-initials{
-                    span{
-                        width: 30px;
-                        height: 30px;
-                        border-radius: 30px;
-                        display: inline-block;
-                        background-color: $light-yellow;
-                        color: $black;
-                        text-align: center;
-                        padding: 8px;
-                        &:nth-child(2){
-                            background-color: $light-red;
-                            margin-right: 50px;
-                            margin-left: -13px;
-                        }
-                    }
-                }
-            }
-            .my-course-button{
-                button{
-                    @include font($white,13px,700,20px);
-                    padding: 6px 22px;
-                    background-color: $light-green;
-                    border-radius: 5px;
-                    margin-top: 30px;
-                    &:nth-child(1){
-                        margin-right: 10px;
-                    }
-                }
-            }
-        }
-    }
-}
 
 
 /* sme_ list starts here */
@@ -1547,6 +1284,9 @@ body{
 }
 
 /* sme_ learners ends here */
+
+
+
 
 
 // .landing-search-image-container,.live-classes,.live-video-container,.course-container,

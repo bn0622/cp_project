@@ -1,0 +1,143 @@
+.main-container{
+    .course-videos-container{
+            .course-video-list{
+                background: $white;
+                border-radius: 20px;
+                padding: 25px 15px;
+                margin: 0px auto 70px;
+                &-left{ 
+                    video{
+                        width: 100%;
+                        height: calc(100% - 36px);
+                    }
+                    .video-breadcrumb{
+                        @include font(rgba(10, 3, 60, 0.4),16px,false,20px);
+                        margin-bottom: 18px;
+                        .active{
+                            color: #FF4B00;
+                        }
+                    }
+                }
+                &-right{
+                    height: 420px;
+                    overflow-y: scroll;
+                    h2{
+                        @include font($body-color,25px,false,32px);
+                        margin-bottom: 5px;
+                    }
+                    .course-list-item{
+                        &-details{
+                            display: flex;
+                            background: $white;
+                            box-shadow: 0px 50px 50px rgba(0, 0, 0, 0.1);
+                            border-radius: 10px;
+                            padding: 5px;
+                            margin-bottom: 5px;
+                            .course-list-item-btm{
+                                margin-left: 5px;
+                                @include font($body-color,18px,false,20px);
+                                P:last-child{
+                                @include font($btn-active   ,14px,false,16px);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+    }
+    .course-detail-content{
+        .course-video-list-in{
+            margin: 0px auto;
+            .course-price-details{
+                padding: 32px 20px;
+                background: $white;
+                border-radius: 10px;
+                &-list{
+                    margin-bottom: 20px;
+                    display: flex;
+                    justify-content: space-between;
+                    .details-price{
+                        @include font($btn-active,24px,false,31px);
+                    }
+                    .details-name{
+                        @include font($body-color,20px,false,25px);
+                        text-decoration: underline;
+                    }
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .purchase-course{
+                margin-top: 20px;
+                border-radius: 5px;
+                padding: 20px;
+                background-color: $light-green;
+                color: $white;
+            }
+        }
+        .course-video-list-carousel{
+            margin: 0px auto;
+            h1{
+                margin-bottom: 20px;
+            }
+            .course-list-carousel{
+                margin-bottom: 30px;
+                .course-list-carousel-section{
+                    display: flex;
+                    padding: 15px;
+                    background: $white;
+                    box-shadow: 0px 50px 80px rgba(0, 0, 0, 0.05);
+                    border-radius: 10px;
+                }
+                &-right{
+                    p{
+                        @include font($body-color,22px,false,22px);
+                    }
+                    margin-left: 15px;
+                    .courser-list-rate{
+                        margin: 10px 0;
+                    }
+                    .rate-check{
+                        @include font($btn-active,22px,false,20px);
+                    }
+                } 
+            }
+        }
+        h1{
+            @include font($body-color,30px,false,38px);
+        }
+        p.in-text{
+            @include font($body-text,16px,false,30px);
+            margin-bottom: 60px;
+        }
+        ul{
+            margin-bottom: 40px;
+            margin-left: 20px;
+            li{
+                line-height: 24px;
+                &::before {
+                    content: "\2022";
+                    color: $btn-active;
+                    font-weight: bold;
+                    display: inline-block;
+                    width: 1em;
+                    margin-left: -1em;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .course-video-list-right{
+        margin-top: 10px;
+        .course-list-item{
+            display: flex;
+            overflow-x: scroll;
+            .course-list-item-details{
+                margin-right: 8px;
+            }
+        }
+    } 
+ }
