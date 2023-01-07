@@ -928,6 +928,27 @@ input[type=text]:focus, input[type=password]:focus, input[type=number]:focus {
 .main-container .sme-accordion.courseDescription .basic-update-label-lessons .lessons-left {
   padding-left: 50px;
 }
+.main-container .sme-accordion.courseDescription .basic-update-label-lessons .lessons-left .lessons-left-type {
+  display: flex;
+}
+.main-container .sme-accordion.courseDescription .basic-update-label-lessons .lessons-left .lessons-left-type.lessons-left-relative {
+  position: relative;
+}
+.main-container .sme-accordion.courseDescription .basic-update-label-lessons .lessons-left .lessons-left-type img {
+  margin-left: 12px;
+}
+.main-container .sme-accordion.courseDescription .basic-update-label-lessons .lessons-left .lessons-left-type img:hover + .lesson-none {
+  display: block;
+  position: absolute;
+  right: 10px;
+  padding: 10px;
+  background: #EDEDED;
+  border: 1px solid #BBBBBB;
+  top: -39px;
+}
+.main-container .sme-accordion.courseDescription .basic-update-label-lessons .lessons-left .lessons-left-type .lesson-none {
+  display: none;
+}
 .main-container .sme-accordion.courseDescription .basic-update-label .common-grey-btn {
   margin-right: 15px;
 }
@@ -1094,6 +1115,147 @@ input[type=text]:focus, input[type=password]:focus, input[type=number]:focus {
     margin-bottom: 10px;
   }
 }
+.main-container .assignment-details-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+.main-container .assignment-details-container img {
+  width: 100%;
+}
+.main-container .assignment-filter-box {
+  margin: 0px auto;
+}
+.main-container .assignment-filter-box .assign-select {
+  margin-bottom: 20px;
+}
+.main-container .assignment-filter-box .form-select {
+  padding: 13px;
+}
+.main-container .assignment-filter-box .filter-box-width {
+  position: relative;
+}
+.main-container .assignment-filter-box .filter-box-width input {
+  background: #ffffff;
+  border-radius: 10px;
+  width: 100%;
+  padding: 14px 5px 14px 35px;
+}
+.main-container .assignment-filter-box .filter-box-width .search-icon-filter {
+  background: url(images/search.svg) no-repeat center;
+  padding: 12px;
+  background-color: #8DB600;
+  border-radius: 8px;
+  position: absolute;
+  right: 5px;
+  top: 4px;
+  padding: 21px 21px;
+  border-radius: 8px;
+}
+.main-container .assign-accordion {
+  margin-bottom: 30px;
+}
+.main-container .assign-accordion-row {
+  margin: 0px auto;
+}
+.main-container .assign-accordion-row .assign-length-year {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 7px;
+}
+.main-container .assign-accordion-row .assign-length-year span {
+  margin-left: 15px;
+}
+.main-container .assign-accordion-row .assign-item-chk {
+  border: 1px solid #8DB600;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.main-container .assign-accordion-row .assign-item-chk .acc-body-comments {
+  padding-left: 108px;
+}
+.main-container .assign-accordion-row .assign-item-chk .acc-body-comments .acc-body-para h2 {
+  color: #0A033C;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+}
+.main-container .assign-accordion-row .assign-item-chk .acc-body-comments .acc-body-para p {
+  color: #0A033C;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19px;
+  margin: 5px 0 0 30px;
+}
+.main-container .assign-accordion-row .assign-item-chk .acc-body-comments .acc-body-radio {
+  margin-top: 20px;
+}
+.main-container .assign-accordion-row .assign-item-chk .acc-body-comments .acc-body-radio .form-check-label {
+  line-height: 24px;
+}
+.main-container .assign-accordion-row .assign-item-chk .acc-body-comments .acc-body-radio .acc-form-edit {
+  padding-left: 0;
+  margin-top: 10px;
+}
+.main-container .assign-accordion-row .assign-item-chk .acc-body-comments .acc-body-radio .acc-form-edit input[type=text] {
+  max-width: 470px;
+  margin-bottom: 20px;
+}
+.main-container .assign-accordion-row .assign-header {
+  color: #0A033C;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 38px;
+  margin: 20px 0 40px;
+}
+.main-container .assign-accordion .assign-image-chk {
+  display: flex;
+}
+.main-container .assign-accordion .assign-image .assign-content-right {
+  color: #E86E2D;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main-container .assign-accordion .assign-image .assign-content-right-certified {
+  display: flex;
+  justify-content: space-between;
+}
+.main-container .assign-accordion .assign-image .assign-content-right-certified .certified-new {
+  background: #137111;
+  border: 1px solid #05361F;
+  border-radius: 30px;
+  padding: 10px 40px;
+  color: #ffffff;
+}
+.main-container .assign-accordion .assign-image .assign-content-right-assign span {
+  padding: 0 25px;
+  background: url(images/attach.png) no-repeat 0 3px;
+}
+.main-container .assign-accordion .assign-image .assign-image-right {
+  margin-left: 10px;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.main-container .assign-accordion .assign-image .assign-image-right .assign-course {
+  margin: 13px 0 17px;
+}
+.main-container .assign-accordion .assign-image .assign-image-right .assign-progress {
+  color: #FF6652;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.main-container .assign-accordion .assign-image .assign-image-right .assign-certificate {
+  color: #8DB600;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
 @font-face {
   font-family: AbelFont;
   src: url(font/Abel-Regular.ttf);

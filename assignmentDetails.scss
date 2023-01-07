@@ -1,0 +1,130 @@
+.main-container{
+    .assignment-details-container{
+        position: relative;
+        img{
+            width: 100%;
+        }
+        margin-bottom: 20px;        
+    }
+    .assignment-filter-box{
+        margin: 0px auto;
+        .assign-select{
+            margin-bottom: 20px;
+        }
+        .form-select{
+            padding: 13px;
+        }
+        .filter-box-width{
+            position: relative;
+            input{
+                background: $white;
+                border-radius: 10px;
+                width: 100%;
+                padding: 14px 5px 14px 35px;
+            }
+            .search-icon-filter{
+                background: url(images/search.svg) no-repeat center;
+                padding: 12px;
+                background-color: $light-green;
+                border-radius: 8px;
+                position: absolute;
+                right: 5px;
+                top: 4px;
+                padding: 21px 21px;
+                border-radius: 8px;
+            }
+        }
+    }
+    .assign-accordion{
+        margin-bottom: 30px;
+        &-row{
+            margin: 0px auto;
+            .assign-length-year{
+                @include font($black,18px,400,20px);
+                margin-bottom: 7px;
+                span{
+                    margin-left: 15px;
+                }
+            }
+            .assign-item-chk{
+                border: 1px solid $light-green;
+                border-radius: 10px;
+                overflow: hidden;
+                .acc-body-comments{
+                    padding-left: 108px;
+                    .acc-body-para{
+                        h2{
+                            @include font($body-color,20px,400,25px);
+                        }
+                        p{
+                            @include font($body-color,15px,400,19px);
+                            margin: 5px 0 0 30px;
+                        }
+                    }
+                    .acc-body-radio{
+                        margin-top: 20px;
+                        .form-check-label{
+                            line-height: 24px;
+                        }
+                        .acc-form-edit{
+                            padding-left: 0;
+                            margin-top: 10px;
+                            input[type='text']{
+                                max-width: 470px;
+                                margin-bottom: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+            .assign-header{
+                @include font($body-color,30px,400,38px);
+                margin: 20px 0 40px;
+            }
+        }
+        .assign-image{
+            &-chk{
+                display: flex;
+            }
+            .assign-content-right{
+                color: $fliter-active;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                &-certified{
+                    display: flex;
+                    justify-content: space-between;
+                    .certified-new{
+                        background: #137111;
+                        border: 1px solid #05361F;
+                        border-radius: 30px;
+                        padding: 10px 40px;
+                        color: $white;
+                    }
+                }
+                &-assign{
+                    span{
+                        padding: 0 25px;
+                        background: url(images/attach.png) no-repeat 0 3px;
+                    }
+                }
+            }
+            .assign-image-right{
+                margin-left: 10px;
+                @include font($black,18px,400,20px);
+                .assign-name{
+
+                }
+                .assign-course{
+                    margin: 13px 0 17px;
+                }
+                .assign-progress{
+                    @include font($btn-active,15px,400,20px);
+                }
+                .assign-certificate{
+                    @include font($light-green,15px,400,20px);  
+                }
+            }
+        }
+    }
+}

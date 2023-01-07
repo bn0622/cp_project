@@ -18,6 +18,29 @@
                 padding-left: 10px;
                 .lessons-left{
                     padding-left: 50px;
+                    .lessons-left-type{
+                        display: flex;
+                        &.lessons-left-relative{
+                            position: relative;
+                        }
+                        img{
+                            margin-left: 12px;
+                            &:hover{
+                               & + .lesson-none{
+                                    display: block;
+                                    position: absolute;
+                                    right: 10px;
+                                    padding: 10px;
+                                    background: $grey-bg;
+                                    border: 1px solid $border;
+                                    top: -39px;
+                                }
+                            }
+                        }
+                        .lesson-none{
+                            display: none;
+                        }
+                    }
                 }
             }
             .common-grey-btn{

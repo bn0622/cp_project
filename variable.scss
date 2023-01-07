@@ -20,7 +20,8 @@ $dark-red: #F81616;
 $fliter-active: #E86E2D;
 $red: #FF0000;
 $grey: #EBEBEB;
-
+$grey-bg: #EDEDED;
+$border: #BBBBBB;
 
 @mixin font($color,$size,$weight,$height) {
     color: $color;
