@@ -71,7 +71,7 @@
           </div>
         </div>
       </article>
-      <article class="sme-accordion sme-accordion-mobile">
+      <article class="sme-accordion courseDescription sme-accordion-mobile">
         <div class="accordion accordion-flush" id="accordionFlushExample">
           <h1 class="course-details-desc">Course Details</h1>
           <div class="accordion-item">
@@ -86,59 +86,76 @@
             <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
               <article class="basic-info-container">
                 <form class="basic-update-label">
+                  <div class="mb-3 experts-header">
+                    Hey experts, Are you ready to rock?  
+                  </div>
+                  <div class="basic-update-right basic-update-right-type">
+                    <div class="form-check form-check-inline form-check-type">Type of class:</div>
+                    <div class="form-check form-check-inline form-check-type-class">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                      <label class="form-check-label" for="flexRadioDefault1">
+                        Live 1:1 class
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline form-check-type-class">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                      <label class="form-check-label" for="flexRadioDefault2">
+                        Recorded class
+                      </label>
+                    </div>
+                  </div>
                   <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">First Name</label>
+                    <label for="exampleInputEmail1" class="form-label">Course Title</label>
                     <input type="text" class="form-control full-name" id="exampleInputEmail1" aria-describedby="emailHelp">
                   </div>
                   <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Last Name</label>
+                    <label for="exampleInputEmail1" class="form-label">Category</label>
                     <input type="text" class="form-control full-name" id="exampleInputEmail1" aria-describedby="emailHelp">
                   </div>
                   <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Profession</label>
+                    <label for="exampleInputEmail1" class="form-label">Level</label>
                     <input type="text" class="form-control full-name" id="exampleInputEmail1" aria-describedby="emailHelp">
                   </div>
                   <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Website</label>
+                    <label for="exampleInputEmail1" class="form-label">Applicable for</label>
                     <input type="text" class="form-control full-name" id="exampleInputEmail1" aria-describedby="emailHelp">
                   </div>
                   <div class="mb-3 basic-text-area">
-                    <label for="exampleInputEmail1" class="form-label">Introduce Yourself</label>
+                    <label for="exampleInputEmail1" class="form-label">Prerequisites for taking your course?</label>
                     <textarea></textarea>
                     <span>Atlease 50 characters</span>
                   </div>
-                  <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Linkedin</label>
-                    <input type="text" class="form-control full-name" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div class="mb-3 basic-text-area">
+                    <label for="exampleInputEmail1" class="form-label">What will student learn in your course?</label>
+                    <textarea></textarea>
+                    <!-- <span>Atlease 50 characters</span> -->
                   </div>
-                  <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Facebook</label>
-                    <input type="text" class="form-control full-name" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  </div>
-                  <div class="mb-3 basic-update-select">
-                    <div class="basic-update-select-left">
-                      <h4>Upload Photos</h4>
+                  <div class="mb-3 basic-update-select row">
+                    <div class="basic-update-select-left col-auto">
+                      <h4>What is your price?</h4>
                       <div class="form-check form-check-inline basic-slect-cont">
-                        <select class="">
-                          <option>test 1</option>
-                          <option>test 12</option>
-                        </select>
                         <input class="form-control" type="text" id="inlineCheckbox1">
                       </div>
                     </div>
-                    <div class="basic-update-right">
-                      <h4>Show your photo public?</h4>
-                      <div class="form-check form-check-inline basic-update-right-text">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                          Yes
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline basic-update-right-text">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                        <label class="form-check-label" for="flexRadioDefault2">
-                          No
-                        </label>
+                    <div class="basic-update-right col-auto">
+                      <h4>Add discout? (%)</h4>
+                      <div class="right-text">
+                        <div class="form-check form-check-inline basic-update-right-text">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            Yes
+                          </label>
+                        </div>
+                        <div class="form-check form-check-inline basic-update-right-text">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                          <label class="form-check-label" for="flexRadioDefault2">
+                            No
+                          </label>
+                        </div>
+                        <div class="form-check form-check-inline basic-update-right-text right-text-cont">
+                            <input type="text" class="form-control update-number"/>
+                            <span>$500</span>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -153,100 +170,151 @@
               </div>
             </h2>
             <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-              <form class="basic-update-label">
+              <form class="basic-update-label basic-update-label-lessons">
                 <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Account Name</label>
+                  <label for="exampleInputEmail1" class="form-label">Lesson 1</label>
+                </div>
+                <div class="mb-3 lessons-left">
+                  <label for="exampleInputEmail1" class="form-label">Lesson Name</label>
+                  <input type="text" class="form-control full-name" placeholder="Name of the lesson" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3 lessons-left">
+                  <label for="exampleInputEmail1" class="form-label">Upload Lesson Video</label>
                   <input type="text" class="form-control full-name" id="exampleInputEmail1" aria-describedby="emailHelp">
                 </div>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Bank Name</label>
+                <div class="mb-3 lessons-left">
+                  <label for="exampleInputEmail1" class="form-label">Tags</label>
                   <input type="text" class="form-control full-name" id="exampleInputEmail1" aria-describedby="emailHelp">
                 </div>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Account Number</label>
-                  <input type="text" class="form-control full-name" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </form> 
+              <form>
+                <div class="resource-details">
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Resource Details - Resource 1</label>
+                  </div>
+                  <div class="mb-3 lessons-left-resource">
+                    <label for="exampleInputEmail1" class="form-label">External Link Reference</label>
+                    <input type="text" class="form-control full-name" placeholder="Name of the lesson" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-3 lessons-left-resource">
+                    <label for="exampleInputEmail1" class="form-label">Upload Document</label>
+                    <input type="text" class="form-control full-name" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-3 lessons-left-resource">
+                    <button class="common-grey-btn">Save Assginment</button>  
+                    <button class="common-grey-btn">Add Another Assignment</button>  
+                  </div>
+                  <div class="minimum-text">Note: Files and links for particular  sections can be added as a resource</div>
                 </div>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">IFSC Code</label>
-                  <input type="text" class="form-control full-name" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Branch</label>
-                  <input type="text" class="form-control full-name" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">City</label>
-                  <input type="text" class="form-control full-name" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-                <div class="mb-3 basic-update-select">
-                  <div class="basic-update-right">
-                    <h5 for="exampleInputEmail1" class="form-label">Account Type</h5>
-                    <div class="form-check form-check-inline basic-update-right-text">
-                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                      <label class="form-check-label" for="flexRadioDefault1">
-                        Savings
+              </form> 
+              <form>
+                <div class="resource-details">
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Quiz Details -  Question 1</label>
+                  </div>
+                  <div class="mb-3 lessons-left-resource">
+                    <label for="exampleInputEmail1" class="form-label">Enter question</label>
+                    <input type="text" class="form-control full-name" placeholder="Name of the lesson" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                  <div class="form-check lessons-left-resource quest-type">
+                    <div class="form-check form-check-inline quest-type-line">
+                      <label class="form-check-label" for="inlineRadio1">Question Type</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                      <label class="form-check-label" for="inlineRadio1">Multiple choice answer </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                      <label class="form-check-label" for="inlineRadio2">Single choice answer</label>
+                    </div>
+                  </div>
+                  <div class="correct-answer-text correct-answer-text-question">
+                    <div class="form-check lessons-left-resource-chk">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <input class="form-control" type="text" value="Semi unsupervised learning" id="flexCheckDefault">
+                    </div>
+                    <div class="form-check lessons-left-resource-chk">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                      <input class="form-control" type="text" value="Supervised learning" id="flexCheckDefault">
+                    </div>
+                    <div class="form-check lessons-left-resource-chk">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <input class="form-control" type="text" value="Reinforcement learning" id="flexCheckDefault">
+                    </div>
+                    <div class="form-check lessons-left-resource-chk">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                      <input class="form-control" type="text" value="Structured learning" id="flexCheckDefault">
+                    </div>
+                  </div>
+                  <div class="form-check lessons-left-resource">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Cottect Answer
+                    </label>
+                  </div>
+                  <div class="correct-answer-text">
+                    <div class="form-check lessons-left-resource-chk">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Semi unsupervised learning
                       </label>
                     </div>
-                    <div class="form-check form-check-inline basic-update-right-text">
-                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                      <label class="form-check-label" for="flexRadioDefault2">
-                        Current
+                    <div class="form-check lessons-left-resource-chk">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                      <label class="form-check-label" for="flexCheckChecked">
+                        Supervised learning
+                      </label>
+                    </div>
+                    <div class="form-check lessons-left-resource-chk">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Reinforcement learning
+                      </label>
+                    </div>
+                    <div class="form-check lessons-left-resource-chk">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                      <label class="form-check-label" for="flexCheckChecked">
+                        Structured learning
                       </label>
                     </div>
                   </div>
+                  <div class="mb-3 lessons-left-resource-chk">
+                    <button class="common-grey-btn">Save  Question</button>  
+                    <button class="common-grey-btn">Add Another Question</button>  
+                  </div>
                 </div>
-              </form>  
+              </form> 
+              <div class="mb-3 save-location">
+                <button class="common-grey-btn">Save  Lesson</button>  
+                <button class="common-grey-btn">Add Another Lesson</button>  
+              </div>
             </div>
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingThree">
-              <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                 Add Assignments
               </div>
             </h2>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
               <form class="basic-update-label">
                 <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Account Name</label>
+                  <label for="exampleInputEmail1" class="form-label">Assignment Question</label>
+                  <input type="text" class="form-control full-name" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3 basic-text-area">
+                  <label for="exampleInputEmail1" class="form-label">Assignment Description</label>
+                  <textarea></textarea>  
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Tags</label>
                   <input type="text" class="form-control full-name" id="exampleInputEmail1" aria-describedby="emailHelp">
                 </div>
                 <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Bank Name</label>
-                  <input type="text" class="form-control full-name" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <button class="common-grey-btn">Save Assginment</button>  
+                  <button class="common-grey-btn">Add Another Assignment</button>  
                 </div>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Account Number</label>
-                  <input type="text" class="form-control full-name" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">IFSC Code</label>
-                  <input type="text" class="form-control full-name" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Branch</label>
-                  <input type="text" class="form-control full-name" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">City</label>
-                  <input type="text" class="form-control full-name" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-                <div class="mb-3 basic-update-select">
-                  <div class="basic-update-right">
-                    <h5 for="exampleInputEmail1" class="form-label">Account Type</h5>
-                    <div class="form-check form-check-inline basic-update-right-text">
-                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                      <label class="form-check-label" for="flexRadioDefault1">
-                        Savings
-                      </label>
-                    </div>
-                    <div class="form-check form-check-inline basic-update-right-text">
-                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                      <label class="form-check-label" for="flexRadioDefault2">
-                        Current
-                      </label>
-                    </div>
-                  </div>
-                </div>
+                <div class="mb-3">&nbsp;</div>
               </form>  
             </div>
           </div>

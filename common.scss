@@ -1,0 +1,36 @@
+.main-header{
+    @include font($body-color,45px,400,55px);
+}
+.main-para{
+    @include font($body-text,16px,400,30px);
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+.light-green-btn{
+    background-color: $light-green;
+    color: $white;
+}
+input[type='text'],input[type='password'],input[type='number']{
+    border: 1px solid $text-border;
+    &:focus{
+        border: 1px solid $text-border;
+    }
+}
+
+.rating-active{
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background: url(images/star_select.png) no-repeat;
+    background-size: 16px;
+}
+
+.common-grey-btn{
+    background: $body-text;
+    border: 1px solid $body-text;
+    border-radius: 5px;
+    padding: 6px 33px;
+    @include font($white,13px,400,20px);
+}
+

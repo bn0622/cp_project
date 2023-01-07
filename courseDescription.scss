@@ -1,0 +1,193 @@
+.main-container{
+    .save-location{
+        margin: 10px;
+        .common-grey-btn{
+            margin-right: 10px;
+        }
+    }
+    .sme-accordion.courseDescription{
+        width: calc(100% - 140px);
+        margin: 0 auto 20px;
+        .course-details-desc{
+            @include font($body-color,30px,400,38px);
+        }
+        .basic-update-label{
+            padding: 26px 55px 0 55px;
+            max-width: 800px;
+            &-lessons{
+                padding-left: 10px;
+                .lessons-left{
+                    padding-left: 50px;
+                }
+            }
+            .common-grey-btn{
+                margin-right: 15px;
+            }
+            .form-check-type{
+                padding-left: 0;
+                margin-bottom: 10px;
+            }
+            .form-check-type-class{
+                label{
+                    line-height: 24px;
+                }
+            }
+            .experts-header{
+                @include font($body-color,45px,400,55px);
+            }
+            .basic-update-select{
+                // display: flex;
+                h4{
+                    @include font($body-color,20px,400,25px);
+                    margin-bottom: 13px;
+                }
+                .basic-slect-cont{
+                    display: flex;
+                    padding-left: 0;
+                    select,input{
+                        width: 180px;
+                        // margin-right: 30px;
+                    }
+                }
+                .basic-update-right{
+                    .right-text{
+                        display: flex;
+                        align-items: center;
+                        .right-text-cont{
+                            display: flex;
+                            align-items: center;
+                        }
+                    }
+                    &-text{
+                        line-height: 22px;
+                    }
+                    span{
+                        margin-left: 40px;
+                    }
+                    .update-number{
+                        width: 90px;
+                    }
+                }
+            }
+            .basic-text-area{
+                textarea{
+                    width: 100%;
+                    min-height: 90px;
+                    & + span{
+                        @include font($text-grey,20px,400,25px);
+                    }
+                }
+            }
+            input[type='text'],textarea{
+                border: 1px solid $border-grey;
+                border-radius: 5px;
+            }
+        }
+        .resource-details{
+            margin: 0 10px 20px;
+            padding: 15px 30px;
+            background: $grey;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            input[type='text']{
+                border: 1px solid $border-grey;
+            }
+            .correct-answer-text{
+                margin-bottom: 10px;
+                &-question{
+                    margin-bottom: 20px;
+                    max-width: 800px;
+                    input[type='text']{
+                        background: $white;
+                        border: 1px solid $border-grey;
+                        border-radius: 5px;
+                        padding: 3px 6px;
+                    }
+                    .form-check-input{
+                        margin-top: 8px;
+                    }
+                    .lessons-left-resource-chk{
+                        margin-bottom: 10px;
+                    }
+                }
+                label{
+                    line-height: 26px;
+                }
+            }
+            .lessons-left-resource{
+                padding-left: 20px;
+                max-width: 800px;
+                &.quest-type{
+                    padding-left: 0;
+                    margin: 26px 0 15px 0;
+                    .quest-type-line{
+                        padding-left: 20px;
+                    }
+                    .form-check-inline{
+                        label{
+                            line-height: 24px;
+                        }
+                    }
+                }
+                &-chk{
+                    margin-left: 18px;
+                    .common-grey-btn{
+                        margin-right: 10px;
+                    }
+                }
+                .common-grey-btn{
+                    margin-right: 10px;
+                }
+            }
+            .minimum-text{
+                @include font($body-color,13px,400,15px);
+            }
+        }
+        .accordion-item{
+            margin-bottom: 5px;
+            h2.accordion-header{
+                .accordion-button{
+                    background-color: $light-green;
+                    padding: 12px 55px;
+                    color: $body-color;
+                    &::after{
+                        position: absolute;
+                        left: 18px;
+                        transform: rotate(-90deg);
+                        background-image: url('images/download_down.svg');
+                    }
+                    &:not(.collapsed)::after{
+                        transform: rotate(0deg);
+                    }
+                    .basic-info{
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .help-create{
+        width: calc(100% - 140px);
+        margin: 0 auto 60px;
+        padding: 65px 0;
+        background-color: $help-bg;
+        border-radius: 20px;
+        @include font($white,45px,400,55px);
+    }
+    .sme-image-container{
+        img{
+            width: 100%;
+        }
+        margin-bottom: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 545px) {
+    .lessons-left-resource-chk{
+        .common-grey-btn{
+            margin-bottom: 10px;
+        }
+    } 
+ }

@@ -19,6 +19,7 @@ $light-red: #CC6144;
 $dark-red: #F81616;
 $fliter-active: #E86E2D;
 $red: #FF0000;
+$grey: #EBEBEB;
 
 
 @mixin font($color,$size,$weight,$height) {
@@ -29,30 +30,3 @@ $red: #FF0000;
 }
 
 
-.main-header{
-    @include font($body-color,45px,400,55px);
-}
-.main-para{
-    @include font($body-text,16px,400,30px);
-}
-.mb-20{
-    margin-bottom: 20px;
-}
-.light-green-btn{
-    background-color: $light-green;
-    color: $white;
-}
-input[type='text'],input[type='password'],input[type='number']{
-    border: 1px solid $text-border;
-    &:focus{
-        border: 1px solid $text-border;
-    }
-}
-
-.rating-active{
-    width: 16px;
-    height: 16px;
-    display: inline-block;
-    background: url(images/star_select.png) no-repeat;
-    background-size: 16px;
-}
