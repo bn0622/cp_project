@@ -1157,6 +1157,9 @@ input[type=text]:focus, input[type=password]:focus, input[type=number]:focus {
 .main-container .assign-accordion-row {
   margin: 0px auto;
 }
+.main-container .assign-accordion-row .accordion.accordion-flush {
+  margin-bottom: 20px;
+}
 .main-container .assign-accordion-row .assign-length-year {
   color: #000000;
   font-size: 18px;
@@ -1256,6 +1259,71 @@ input[type=text]:focus, input[type=password]:focus, input[type=number]:focus {
   line-height: 20px;
 }
 
+.sign-up-desktop-container {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+.sign-up-desktop-container .sign-up-left, .sign-up-desktop-container .sign-up-right {
+  width: 45%;
+}
+.sign-up-desktop-container .sign-up-left h1 {
+  color: #5D5A6F;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 50px;
+  margin: 75px 0 25px;
+}
+.sign-up-desktop-container .sign-up-left .carousel-indicators {
+  bottom: -12px;
+}
+.sign-up-desktop-container .sign-up-left .carousel-indicators button {
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background: rgb(255, 102, 82);
+  border: 1px solid rgb(255, 102, 82);
+}
+.sign-up-desktop-container .sign-up-left .carousel-indicators button.active {
+  background: #ffffff;
+  border: 1px solid rgb(255, 102, 82);
+}
+.sign-up-desktop-container .sign-up-left .carousel-item img {
+  margin: 0px auto;
+}
+.sign-up-desktop-container .sign-up-center {
+  width: 1px;
+  margin: 0 20px;
+  padding: 0;
+  background: linear-gradient(180deg, rgba(10, 3, 60, 0) 0%, #0A033C 51.56%, rgba(10, 3, 60, 0) 100%);
+}
+.sign-up-desktop-container .sign-or-content h1.sign-or {
+  display: grid;
+  grid-template-columns: minmax(50px, 1fr) auto minmax(50px, 1fr);
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+}
+.sign-up-desktop-container .sign-or-content p {
+  margin-top: 20px;
+}
+.sign-up-desktop-container .sign-or-content p span {
+  color: #8DB600;
+}
+.sign-up-desktop-container .sign-or-content h1.sign-or::before, .sign-up-desktop-container .sign-or-content h1.sign-or::after {
+  content: "";
+  border-top: 1px solid #DEDDE4;
+}
+
+@media only screen and (max-width: 768px) {
+  .sign-up-desktop-container .sign-up-left, .sign-up-desktop-container .sign-up-center {
+    display: none;
+  }
+  .sign-up-desktop-container .sign-up-right {
+    margin: 0px auto;
+    width: 85%;
+  }
+}
 @font-face {
   font-family: AbelFont;
   src: url(font/Abel-Regular.ttf);
@@ -1265,6 +1333,9 @@ body {
   font-family: AbelFont, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+.main-container .navbar .dropdown-menu.dropdown-menu-align {
+  left: -100px;
+}
 .main-container .navbar .navbar-toggler {
   border: 0;
   box-shadow: none;
@@ -1608,6 +1679,10 @@ body {
   line-height: 26px;
 }
 
+.dialog-updated .modal-body {
+  padding-top: 0;
+}
+
 @media only screen and (max-width: 1024px) {
   .main-container .landing-search-image-container .search-container div.search-cont-text {
     width: calc(100% - 60px);
@@ -1765,7 +1840,6 @@ body {
   }
 }
 .sign-up-container {
-  margin-top: 80px;
   display: flex;
   justify-content: center;
 }
@@ -1801,6 +1875,23 @@ body {
   margin: 0 20px;
   padding: 0;
   background: linear-gradient(180deg, rgba(10, 3, 60, 0) 0%, #0A033C 51.56%, rgba(10, 3, 60, 0) 100%);
+}
+.sign-up-container .sign-or-content h1.sign-or {
+  display: grid;
+  grid-template-columns: minmax(50px, 1fr) auto minmax(50px, 1fr);
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+}
+.sign-up-container .sign-or-content p {
+  margin-top: 20px;
+}
+.sign-up-container .sign-or-content p span {
+  color: #8DB600;
+}
+.sign-up-container .sign-or-content h1.sign-or::before, .sign-up-container .sign-or-content h1.sign-or::after {
+  content: "";
+  border-top: 1px solid #DEDDE4;
 }
 
 .form-update-label {

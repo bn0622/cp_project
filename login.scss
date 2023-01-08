@@ -1,0 +1,70 @@
+.sign-up-desktop-container{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    .sign-up-left,.sign-up-right{
+        width: 45%;
+    }
+    .sign-up-left{
+        h1{
+            @include font($body-text,40px,400,50px);
+            margin: 75px 0 25px;
+        }
+        .carousel-indicators{
+            bottom: -12px;
+            button{
+                width: 8px;
+                height: 8px;
+                border-radius: 8px;
+                background: rgba(255, 102, 82, 1);
+                border: 1px solid rgba(255, 102, 82, 1);
+                &.active{
+                    background: $white;
+                    border: 1px solid rgba(255, 102, 82, 1);
+                }
+            }
+        }
+        .carousel-item{
+            img{
+                margin: 0px auto;
+            }
+        }
+    }
+    .sign-up-center{
+        width: 1px;
+        margin: 0 20px;
+        padding: 0;
+        background: linear-gradient(180deg, rgba(10, 3, 60, 0) 0%, #0A033C 51.56%, rgba(10, 3, 60, 0) 100%);
+    }
+    .sign-or-content{
+        h1.sign-or {
+            display: grid;
+            grid-template-columns: minmax(50px, 1fr) auto minmax(50px, 1fr);
+            align-items: center;
+            text-align: center;
+            gap: 40px;
+        }
+        p{
+            margin-top: 20px;
+            span{
+                color: $light-green;
+            }
+        }
+        h1.sign-or::before, h1.sign-or::after {
+            content: '';
+            border-top: 1px solid $text-border;
+        }
+    }      
+}
+
+@media only screen and (max-width: 768px) {
+    .sign-up-desktop-container{
+        .sign-up-left,.sign-up-center{
+            display: none;
+        }
+        .sign-up-right{
+            margin: 0px auto;
+            width: 85%;
+        }
+    }
+}
