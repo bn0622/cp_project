@@ -719,93 +719,6 @@ body{
     }
 }
 
-// .main-container{
-//     .sme-accordion{
-//         width: calc(100% - 140px);
-//         margin: 0 auto 20px;
-//         .course-details-desc{
-//             @include font($body-color,30px,400,38px);
-//         }
-//         .basic-update-label{
-//             padding: 26px 55px 0 55px;
-//             max-width: 800px;
-//             .basic-update-select{
-//                 display: flex;
-//                 justify-content: space-between;
-//                 h4{
-//                     @include font($body-color,20px,400,25px);
-//                     margin-bottom: 13px;
-//                 }
-//                 .basic-slect-cont{
-//                     display: flex;
-//                     padding-left: 0;
-//                     select,input{
-//                         width: 180px;
-//                         margin-right: 30px;
-//                     }
-//                 }
-//                 .basic-update-right{
-//                     &-text{
-//                         line-height: 22px;
-//                     }
-//                 }
-//             }
-//             .basic-text-area{
-//                 textarea{
-//                     width: 100%;
-//                     min-height: 90px;
-//                     & + span{
-//                         @include font($text-grey,20px,400,25px);
-//                     }
-//                 }
-//             }
-//             input[type='text'],textarea{
-//                 border: 1px solid $border-grey;
-//                 border-radius: 5px;
-//             }
-//         }
-//         .accordion-item{
-//             margin-bottom: 5px;
-//             h2.accordion-header{
-//                 .accordion-button{
-//                     background-color: $light-green;
-//                     padding: 12px 55px;
-//                     color: $body-color;
-//                     &::after{
-//                         position: absolute;
-//                         left: 18px;
-//                         transform: rotate(-90deg);
-//                         background-image: url('images/download_down.svg');
-//                     }
-//                     &:not(.collapsed)::after{
-//                         transform: rotate(0deg);
-//                     }
-//                     .basic-info{
-//                         display: flex;
-//                         justify-content: space-between;
-//                         width: 100%;
-//                     }
-//                 }
-//             }
-//         }
-//     }
-//     .help-create{
-//         width: calc(100% - 140px);
-//         margin: 0 auto 60px;
-//         padding: 65px 0;
-//         background-color: $help-bg;
-//         border-radius: 20px;
-//         @include font($white,45px,400,55px);
-//     }
-//     .sme-image-container{
-//         img{
-//             width: 100%;
-//         }
-//         margin-bottom: 20px;
-//     }
-// }
-
-
 
 
 /* sme_ list starts here */
@@ -1088,6 +1001,17 @@ body{
             border-radius: 20px;
             margin: 0px auto;
             .ongoing-container{
+                .class-rating-half{
+                    span{
+                        @include font($black,12px,400,20px);
+                        &:first-child{
+                            margin-right: 5px;
+                        }
+                        &:last-child{
+                            margin-left: 5px;
+                        }
+                    }
+                }
                 .review-cont-box {
                     .review-cont-details{
                         margin-bottom: 20px;
