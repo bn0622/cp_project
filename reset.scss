@@ -47,11 +47,20 @@ button{
         border: 0;
     }
 }
-input[type='text'],input[type='password'],input[type='number']{
+input[type='text'],input[type='password'],input[type='number'],textarea{
     border: 0;
     outline: 0;
     &:focus{
         border: 0;
         outline: 0;
+		box-shadow: none;
     }
+}
+input[type='radio']{
+	&:focus{
+     	box-shadow: none;
+    }
+}
+textarea{
+	padding: 10px;
 }

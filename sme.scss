@@ -1,0 +1,122 @@
+.main-container{
+    .sme--list-image-container{
+        position: relative;
+        img{
+            width: 100%;
+        }
+        margin-bottom: 20px;
+        .search-container{
+            text-align: center;
+            width: 100%;
+            position: absolute;
+            bottom:20px;
+            .search-cont-text{
+                width: calc(100% - 600px);
+                position: relative;
+                margin: 0px auto;
+            }
+            input{
+                height: 60px;
+                border-radius: 10px;
+                background: #ffffff;
+                border: 0;
+                width: 100%;
+                padding-left: 20px;
+            }
+            .search-icon{
+                background: url('images/search.svg') $light-green no-repeat center;
+                padding: 12px;
+                border-radius: 8px;
+                width: 46px;
+                height: 46px;
+                display: inline-block;
+                position: absolute;
+                right: 7px;
+                top: 7px;
+            }
+        }
+    }
+}
+
+.main-container{
+    .sme-accordion{
+        width: calc(100% - 140px);
+        margin: 0 auto 20px;
+        .basic-update-label{
+            padding: 26px 55px 10px 55px;
+            max-width: 800px;
+            .basic-update-select{
+                display: flex;
+                justify-content: space-between;
+                h4{
+                    @include font($body-color,20px,400,25px);
+                    margin-bottom: 13px;
+                }
+                .basic-slect-cont{
+                    display: flex;
+                    padding-left: 0;
+                    select,input{
+                        width: 180px;
+                        margin-right: 30px;
+                    }
+                }
+                .basic-update-right{
+                    &-text{
+                        line-height: 22px;
+                    }
+                }
+            }
+            .basic-text-area{
+                textarea{
+                    width: 100%;
+                    min-height: 90px;
+                    & + span{
+                        @include font($text-grey,20px,400,25px);
+                    }
+                }
+            }
+            input[type='text'],textarea{
+                border: 1px solid $border-grey;
+                border-radius: 5px;
+            }
+        }
+        .accordion-item{
+            margin-bottom: 5px;
+            h2.accordion-header{
+                .accordion-button{
+                    background-color: $light-green;
+                    padding: 12px 55px;
+                    color: $body-color;
+                    &::after{
+                        position: absolute;
+                        left: 18px;
+                        transform: rotate(-90deg);
+                        background-image: url('images/download_down.svg');
+                    }
+                    &:not(.collapsed)::after{
+                        transform: rotate(0deg);
+                    }
+                    .basic-info{
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .help-create{
+        width: calc(100% - 140px);
+        margin: 0 auto 60px;
+        padding: 65px 0;
+        background-color: $help-bg;
+        border-radius: 20px;
+        @include font($white,45px,400,55px);
+    }
+    .sme-image-container{
+        img{
+            width: 100%;
+        }
+        margin-bottom: 20px;
+    }
+}

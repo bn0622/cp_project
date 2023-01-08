@@ -1,0 +1,125 @@
+
+/* sme_ portfolio starts here */
+
+.main-container{
+    .sme-portfolio-bg{
+        margin-bottom: 50px;
+        img{
+            width: 100%;
+        }
+    }
+    .sme-portfolio-content{
+        margin-bottom: 20px;
+        &-header{
+            margin: 0px auto;
+            h2{
+                @include font($body-color,30px,400,38px);
+                margin: 30px 0 15px 0;
+            }
+        }
+        &-details{
+            &-mobile{
+                margin-bottom: 20px;
+            }
+            padding: 20px 26px;
+            background-color: $white;
+            border-radius: 20px;
+            margin: 0px auto;
+            .sme-portfolio-box-name{
+                padding: 0 20px;
+                @include font($black,20px,400,25px);
+                display: flex;
+                &-bg{
+                    background: #FBFAFA;
+                    border-radius: 10px;
+                    display: flex;
+                    padding: 20px;
+                    height: 200px;    
+                }
+                .portfolio-box-left{
+                    .portfolio-rating{
+                        span{
+                            margin: 0;
+                            &:first-child{
+                                margin-right: 5px;
+                            }
+                            &:last-child{
+                                margin-left: 5px;
+                            }
+                        }
+                    }
+                }
+                .portfolio-box-right{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin-left: 30px;
+                    img{
+                        margin-bottom: 5px;;
+                    }
+                }
+                .course-age{
+                    color: $light-red;
+                }
+                p{
+                    margin: 3px 0;
+                    @include font($black,16px,400,20px);
+                    span{
+                        margin-left: 20px;
+                    }
+                }
+                .social-btn{
+                    margin-top: 15px;
+                    img{
+                        margin-right: 14px;
+                    }
+                }
+            }
+        }
+        .sme-name{
+            h2{
+                @include font($body-color,30px,400,38px);
+            }
+            p{
+                @include font($body-color,16px,400,30px);
+            }
+        }
+        .portfolio-hr{
+            border-bottom: 1px solid $black;
+            margin: 32px 0;
+        }
+        .review-container{
+            h2{
+                margin-bottom: 10px;
+            }
+            .review-cont-box{
+                .review-cont-details{
+                    margin-bottom: 20px;
+                    &-border{
+                        border: 1px solid $text-border;
+                        padding: 10px;
+                    }
+                    .review-circle{
+                        width: 85px;
+                        height: 85px;
+                        border-radius: 85px;
+                        overflow: hidden;
+                        margin: 0px auto 15px;
+                    }
+                    .review-design{
+                        margin: 10px 0;
+                    }
+                    .review-name{
+                        font-weight: 600;
+                    }
+                    .review-para{
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* sme_ portfolio ends here */

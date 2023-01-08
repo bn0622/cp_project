@@ -1,0 +1,264 @@
+
+/* sme_ learners starts here */
+
+.main-container{
+    .sme-learners-bg{
+        margin-bottom: 50px;
+        img{
+            width: 100%;
+        }
+    }
+    .sme-learners-content{
+        margin-bottom: 20px;
+        &-header{
+            margin: 0px auto;
+            h2{
+                @include font($body-color,30px,400,38px);
+                margin: 30px 0 15px 0;
+            }
+        }
+        &-details{
+            &-mobile{
+                margin-bottom: 20px;
+            }
+            padding: 20px 26px;
+            background-color: $white;
+            border-radius: 20px;
+            margin: 0px auto;
+            .ongoing-container{
+                .class-rating-half{
+                    span{
+                        @include font($black,12px,400,20px);
+                        &:first-child{
+                            margin-right: 5px;
+                        }
+                        &:last-child{
+                            margin-left: 5px;
+                        }
+                    }
+                }
+                .review-cont-box {
+                    .review-cont-details{
+                        margin-bottom: 20px;
+                        .review-cont-details-back{
+                            border-radius: 10px;
+                            background: $white;
+                            border: 1px solid $light-green;
+                            padding: 0;
+                        }
+                        .review-cont-details-border{
+                            display: flex;
+                            padding: 14px 14px 7px;
+                            .review-right-content{
+                                display: flex;
+                                flex-direction: column;
+                                width: 100%;
+                                &-top{
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    flex-wrap: wrap;
+                                    align-content: flex-start;
+                                    font-size: 12px;
+                                    .inter-mediate{
+                                        background: #D9E0FC;
+                                        border-radius: 10px;
+                                        padding: 5px 19px;
+                                        height: 21px;
+                                    }
+                                    .class-circle{
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: space-between;
+                                        span.circle-green{
+                                            width: 25px;
+                                            height: 25px;
+                                            border-radius: 25px;
+                                            display: inline-block;
+                                            background: #168F3F;
+                                            margin-right: 10px;
+                                        }
+                                        &-half{
+                                            span.circle-green{
+                                                background: linear-gradient(90deg, #168F3F 50%, #D9D9D9 50%);
+                                            }
+                                        }
+                                    }
+                                }
+                                &-bottom{
+                                    @include font($black,24px,false,50px);
+                                    p{
+                                        &.content-name-text{
+                                            @include font(false,18px,false,20px);
+                                            margin-bottom: 6px;
+                                        }
+                                        &.content-name-age{
+                                            @include font(false,14px,false,20px);
+                                        }
+                                    }
+                                }
+                            }
+                            .review-circle{
+                                margin-right: 15px;
+                            }
+                        }
+                        .review-learner-bottom{
+                            background-color: rgba(9, 180, 37, 0.6);
+                            padding: 23px;
+                            color: $black;
+                        }
+                    }
+                }
+                &.ongoing-recommended-container{
+                    .review-learner-middle{
+                        padding: 4px 14px 7px;
+                        display: flex;
+                        align-items: center;
+                        .review-text-circle{
+                            width: 24px;
+                            height: 24px;
+                            border-radius: 24px;
+                            display: inline-block;
+                            overflow: hidden;
+                            padding: 5px;
+                            text-align: center;
+                            &.first{
+                                background: $light-yellow;
+                            }
+                            &.last{
+                                background: $light-red;
+                                margin-left: -5px;
+                            }
+                        }
+                        .review-next-text{
+                            @include font($body-text,16px,400,false);     
+                            margin-left: 10px;                       
+                        }
+                    }
+                    .review-cont-details-back{
+                        .review-right-content-bottom{
+                            display: flex;
+                            justify-content: space-between;
+                            .review-social-btn{
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                img{
+                                    margin-bottom: 5px;
+                                }
+                            }                       
+                        }
+                    }
+                    .review-cont-details{
+                        .review-learner-bottom{
+                            background: rgb(217 217 217 / 60%);
+                            border-radius: 0px 0px 10px 10px;
+                            padding: 5px 15px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            span{
+                                color: $red;
+                            }
+                            button{
+                                background-color: $light-green;
+                                padding: 5px 17px;
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+            }
+            .sme-learners-box-name{
+                padding: 0 0px 0 20px;
+                @include font($black,20px,400,25px);
+                display: flex;
+                &-bg{
+                    background: #FBFAFA;
+                    border-radius: 10px;
+                    display: flex;
+                    padding: 20px;
+                    height: 200px;    
+                    .automatic-list{
+                        display: flex;
+                        span{
+                            @include font($black,16px,false,20px);
+                        }
+                        .auto-data{
+                            background: #FFFFFF;
+                            border: 1px solid #D0C8C8;
+                            margin-right: 5px;
+                            border-radius: 10px;
+                            padding: 0 4px;
+                            span:first-child{
+                                margin-right: 20px;
+                            }
+                        }
+                    }
+                }
+                &-auto{
+                    display: flex;
+                    flex-direction: column;
+                }
+                .learners-box-left{
+                    display: flex;
+                    flex-direction: column;
+                    .learners-box-left-first{
+                        display: flex;
+                        .learners-box-first-left{
+
+                        }
+                        .learners-box-first-right{
+                            margin-left: 70px;
+                            .view-certificate{
+                                color: $light-green;
+                            }
+                        }
+                    }
+                }
+                .learners-box-right{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin-left: 30px;
+                    img{
+                        margin-bottom: 5px;;
+                    }
+                }
+                .course-age{
+                    color: $light-red;
+                }
+                p{
+                    margin: 3px 0;
+                    @include font($black,16px,400,20px);
+                    span{
+                        margin-left: 20px;
+                    }
+                }
+                .social-btn{
+                    margin-top: 15px;
+                    img{
+                        margin-right: 14px;
+                    }
+                }
+            }
+        }
+        .sme-name{
+            h2{
+                @include font($body-color,30px,400,38px);
+                margin-bottom: 10px;
+            }
+            p{
+                @include font($body-color,16px,400,30px);
+            }
+        }
+        .learners-hr{
+            border-bottom: 1px solid $black;
+            margin: 32px 0;
+        }
+
+    }
+}
+
+/* sme_ learners ends here */
